@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: radar-docker-pyspark
+spec:
+  containers:
+  - name: radar-docker-pyspark
+    image: k8s-skaffold/radar-image-pyspark
+    ports:
+      - containerPort: 8891
+      - containerPort: 22
